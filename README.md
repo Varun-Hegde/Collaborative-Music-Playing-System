@@ -1,5 +1,7 @@
 # Collaborative-Music-Playing-System using [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
+### Demo - https://collaborative-music-system.herokuapp.com/
+
 - A web app where people can create and join music rooms and control music playing on a device.
 - To create a new room, a user needs to login through his spotify account(implemented using **OAuth**).
 - To access/join the room users only need the room code.
@@ -22,5 +24,3 @@
 3. Material UI
 
 Deployed on Heroku
-
-## Demo - https://collaborative-music-system.herokuapp.com/
