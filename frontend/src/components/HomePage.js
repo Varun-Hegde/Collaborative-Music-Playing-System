@@ -10,6 +10,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -55,6 +56,13 @@ export default class HomePage extends Component {
             </Button>
           </ButtonGroup>
         </Grid>
+        <Grid item xs={12} align='center'>
+          <Typography variant='h6' component='h6'>
+            <a style={{textDecoration:'none',color: "white",fontWeight:'400'} } target="_blank" href='https://github.com/Varun-Hegde'>
+              Built with <FavoriteIcon style={{color: "red",fontSize:'20px'} } /> by Varun
+            </a>
+          </Typography>
+        </Grid>
       </Grid>
     );
   }
@@ -67,6 +75,8 @@ export default class HomePage extends Component {
 
   render() {
     return (
+      <>
+      <main>
       <Router>
         <Switch>
           <Route
@@ -90,6 +100,11 @@ export default class HomePage extends Component {
           />
         </Switch>
       </Router>
+      </main>
+      
+      
+      </>
     );
   }
 }
+

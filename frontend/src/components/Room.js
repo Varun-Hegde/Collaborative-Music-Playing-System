@@ -4,6 +4,8 @@ import CreateRoomPage from "./CreateRoomPage";
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import MusicPlayer from './MusicPlayer'
+import Alert from "@material-ui/lab/Alert";
+
 export default class Room extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,7 @@ export default class Room extends Component {
       isHost: false,
       showSettings: false,
       song: {},
+      showInfo: true,
       spotifyAuthenticated: false
     };
     this.roomCode = this.props.match.params.roomCode;
@@ -151,6 +154,16 @@ export default class Room extends Component {
     }
     return (
       <Grid container spacing={1}>
+        {this.state.showInfo ? (
+         
+            <Grid item xs={12} align='center'>
+            <Alert severity='info' onClose={()=>this.setState({showInfo:false})}>
+              Room Admin needs to have spotify running in background
+            </Alert>
+          </Grid>
+         
+          
+        ) : (null)}
         <Grid item xs={12} align="center">
           <Typography variant="h4" component="h4">
             Room Code: {this.roomCode}

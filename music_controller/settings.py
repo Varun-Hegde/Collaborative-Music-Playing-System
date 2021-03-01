@@ -84,6 +84,18 @@ DATABASES = {
     }
 }
 
+""" DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'collaborative_music_playing_system',
+        'USER': 'varun',
+        'PASSWORD': 'password',
+        'HOST': 'database-1.cmcgkcqi7e2m.us-east-2.rds.amazonaws.com',
+        'PORT': '5432'
+    }
+}
+ """
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
