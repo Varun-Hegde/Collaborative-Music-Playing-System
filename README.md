@@ -2,6 +2,8 @@
 
 ### Demo - https://collaborative-music-system.herokuapp.com/
 
+**Note**: The website may take a minute to load sometimes, as the server may be in hibernate state
+
 - A web app where people can create and join music rooms and control music playing on a device.
 - To create a new room, a user needs to login through his spotify account(implemented using **OAuth**).
 - To access/join the room users only need the room code.
@@ -13,14 +15,14 @@
 
 ### Backend
 
-1. Django and Django REST framework - Framework
-2. Python - Language
-3. PostgreSQL - Database (Deployed on Amazon RDS)
+1. **_Django and Django REST framework_** - Framework
+2. ***\_*Python\*\*** - Language
+3. **_PostgreSQL_** - Database (Deployed on Amazon RDS)
 
 ### Frontend
 
-1. React JS - Library
-2. Javascript - Language
-3. Material UI
+1. **_React JS_** - Library
+2. **_Javascript_** - Language
+3. **_Material UI_**
 
-Deployed on Heroku
+Deployed on **_Heroku_**
