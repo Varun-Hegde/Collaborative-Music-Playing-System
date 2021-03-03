@@ -16,7 +16,7 @@
 ### Backend
 
 1. **_Django and Django REST framework_** - Framework
-2. ***\_*Python\*\*** - Language
+2. **_Python_** - Language
 3. **_PostgreSQL_** - Database (Deployed on Amazon RDS)
 
 ### Frontend
